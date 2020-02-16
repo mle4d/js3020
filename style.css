@@ -1,0 +1,12 @@
+html {
+  background: rgb(2,0,0);
+  background-image: url(assets/bg.png);
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+body {
+  overscroll-behavior: none;
+}
