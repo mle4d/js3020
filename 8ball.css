@@ -5,7 +5,7 @@
   margin: 0;
   border-radius: 50%;
   position: relative;
-  background: black;
+  background: radial-gradient(circle at 10% 120%, #f4d0ec, #a850be 20%, #381e67 100%);
 }
 
 .stage {
