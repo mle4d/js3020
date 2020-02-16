@@ -10,5 +10,20 @@ html {
 body {
   overscroll-behavior: none;
 }
+.words {
+  position: fixed;
+  right: 10%;
+  top: 25%;
+  width: 300px;
+  background: radial-gradient(circle at -50% 50%, #1f164f, #632a88 60%, #1f164f 100%);
+  box-shadow: 20px 20px 20px 20px #2e1d36ba;
+  border-radius: .8em;
+  opacity: .8;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+  outline:none;
+}
 
 
