@@ -115,5 +115,6 @@ transform:rotate(360deg);
   left: 10%;
   bottom: 10%;
   -webkit-filter: blur(.5px);
-  animation: spin-all 30s linear infinite;
+  animation: spin-all 50s linear infinite;
+  background-image: url(assets/twinkle.png);
 }
