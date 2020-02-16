@@ -1,4 +1,36 @@
-@keyframes move-ball {
+@keyframes spin-all {
+  10% {
+transform:rotate(36deg);
+  }
+  20% {
+    transform:rotate(72deg);
+    }
+  30% {
+    transform:rotate(108deg);
+    }
+  40% {
+    transform:rotate(144deg);
+    }
+  50% {
+    transform:rotate(180deg);
+    }
+  60% {
+    transform:rotate(216deg);
+    }
+  70% {
+    transform:rotate(252deg);
+    }
+  80% {
+    transform:rotate(288deg);
+    }
+  90% {
+    transform:rotate(324deg);
+    }
+  100% {
+    transform:rotate(360deg);
+    }
+}
+/* @keyframes move-ball {
   0% {
     transform: none;
   }
@@ -19,7 +51,7 @@ transform:rotate(360deg);
   .3% {
     transform: translateX(160px) translateY(-60px) skewX(15deg) skewY(2deg) scaleX(0) scaleY(0);
   }
-} 
+}  */
 .ball {
   display: inline-block;
   width: 100%;
@@ -27,7 +59,7 @@ transform:rotate(360deg);
   margin: 0;
   border-radius: 50%;
   position: relative;
-  background: radial-gradient(circle at 30% 60%, #f4d0ec, #c467db 25%, #381e67 100%);
+  background: radial-gradient(circle at 30% 40%, #f4d0ec, #c467db 25%, #381e67 100%);
   box-shadow: 20px 20px 20px 20px #2e1d36ba, inset 10px 20px 25px -5px #50297a;
   opacity: .94;
   animation: move-ball 10s ease-in infinite;
@@ -83,4 +115,5 @@ transform:rotate(360deg);
   left: 10%;
   bottom: 10%;
   -webkit-filter: blur(.5px);
+  animation: spin-all 30s linear infinite;
 }
