@@ -16,7 +16,7 @@ body {
   top: 25%;
   width: 300px;
   height: auto;
-  background: radial-gradient(circle at -50% 50%, #1f164f, #632a88 60%, #1f164f 100%);
+  background: radial-gradient(circle at 10% 10%, #1f164f, #632a88 50%, #1f164f 100%);
   box-shadow: 20px 20px 20px 20px #2e1d36ba;
   border-radius: .8em;
   opacity: .8;
