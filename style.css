@@ -13,7 +13,7 @@ body {
 .words {
   position: fixed;
   right: 10%;
-  top: 25%;
+  top: 5%;
   width: 300px;
   height: auto;
   background: radial-gradient(circle at 10% 10%, #1f164f, #632a88 50%, #1f164f 100%);
