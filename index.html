@@ -14,7 +14,7 @@
           </span>
         </figure>
       </section>
-      <div class="burst"></div>
+      <div class="burst1" id="burst1"></div>
     <div class="words" contenteditable></div>
       <button id="button">Ask Again</button>
   <script>
@@ -85,6 +85,8 @@
        recognition.addEventListener('end', function() {
          var ball = document.getElementById("ball");
          ball.classList.toggle("ball2");
+         var burst = document.getElementById("burst1");
+         burst.classList.toggle("burst");
          setTimeout(function() {
            var eight = document.getElementById("eight");
            eight.classList.add("gone");
