@@ -38,7 +38,7 @@ transform:rotate(36deg);
     transform: rotate(360deg) translateX(10px) translateY(10px) skewX(1deg) skewY(1deg) scaleX(0) scaleY(0);
   }
   80%, 100% {
-    transform: rotate(-360deg) translateX(0px) translateY(0px) skewX(1deg) skewY(1deg) scaleX(1) scaleY(1);
+    transform: rotate(-360deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg) scaleX(1) scaleY(1);
   }
 }
 @keyframes spin-answer {
@@ -156,7 +156,7 @@ transform:rotate(-35deg);
   margin: 30%;
   border-radius: 100%;
   border: solid 9px #c46adb;
-  /* box-shadow: inset 10px 10px 10px rgba(105, 1, 121, 0.308), inset 10px 10px 10px rgba(22, 48, 117, 0.591); */
+  box-shadow: inset 10px 10px 10px rgba(105, 1, 121, 0.308), inset 10px 10px 10px rgba(22, 48, 117, 0.591);
   -webkit-transform: translateX(78px) translateY(-60px) skewX(15deg) skewY(2deg);
   -moz-transform: translateX(78px) translateY(-60px) skewX(15deg) skewY(2deg);
   -ms-transform: translateX(78px) translateY(-60px) skewX(15deg) skewY(2deg);
@@ -174,10 +174,11 @@ transform:rotate(-35deg);
   width: 70px;
   left: 64px;
   margin-left: -25px;
-  top: 35px;
+  top: 55px;
   margin-top: 10px;
   color: #ffffff;
   animation: spin-answer 55s linear infinite;
 } 
+
 
 
