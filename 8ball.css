@@ -61,7 +61,7 @@ transform:rotate(360deg);
   position: relative;
   background: radial-gradient(circle at 30% 40%, #f4d0ec, #c467db 25%, #381e67 100%);
   box-shadow: 20px 20px 20px 20px #2e1d36ba, inset 10px 20px 25px -5px #50297a;
-  opacity: .94;
+  opacity: .97;
   animation: move-ball 10s ease-in infinite;
 }
 .ball .eight {
