@@ -37,8 +37,36 @@ transform:rotate(36deg);
   20%, 40% {
     transform: rotate(360deg) translateX(10px) translateY(10px) skewX(1deg) skewY(1deg) scaleX(0) scaleY(0);
   }
+  50% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 1;
+  }
   80%, 100% {
     transform: rotate(-360deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg) scaleX(1) scaleY(1);
+  }
+}
+@keyframes move-burst {
+  0% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+  20% {
+    opacity: .5;
+    transform:rotate(360deg);
+  }
+  30% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  54% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+  80%, 100% {
+    opacity: 0;
+    transform: rotate(360deg);
   }
 }
 @keyframes spin-answer {
@@ -120,7 +148,7 @@ transform:rotate(36deg);
   background: radial-gradient(circle at 30% 40%, #f4d0ec, #c467db 25%, #381e67 100%);
   box-shadow: 20px 20px 20px 20px #2e1d36ba, inset 10px 20px 25px -5px #50297a;
   opacity: .97;
-  animation: move-ball 10s ease-in;
+  animation: move-ball 10s ease-in-out;
 }
 .eight {
   width: 160px;
@@ -184,6 +212,16 @@ transform:rotate(36deg);
   color: #ffffff;
   animation: spin-answer 55s linear infinite;
 } 
-
+.burst {
+  background-image: url(assets/burst.png);
+  width: 400px;
+  height: 400px;
+  background-size: 100%;
+  animation: move-burst 5s ease-in infinite;
+  position: fixed;
+  top: 22%;
+  left: 12%;
+  z-index: -1;
+}
 
 
