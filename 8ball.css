@@ -153,7 +153,9 @@ transform:rotate(36deg);
 }
 .gone {
   position: absolute;
-  background: linear-gradient(45deg, rgb(5, 0, 20) 0%, rgb(9, 1, 85) 100%);
+  background: rgb(9, 1, 85);
+  background-image: url(assets/blurb.png);
+  background-size: 100%;
   width: 160px;
   height: 160px;
   margin: 30%;
