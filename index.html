@@ -9,10 +9,10 @@
     <section class="stage">
         <figure class="ball" id="ball">
           <span class="shadow"></span>
-          <span class="eight"></span>
+          <span class="eight" id="eight"></span>
         </figure>
       </section>
-      <span id="answer"></span>
+      <span class="answer" id="answer"></span>
     <div class="words" contenteditable></div>
       <button id="button">Ask Again</button>
   <script>
@@ -77,13 +77,15 @@
 
     window.onload = function() {
        var answer = document.getElementById("answer");
+       var delay = 10000;
       //  var button = document.getElementById("button");
        recognition.addEventListener('end', function() {
+         var element = document.getElementById("ball");
+          element.classList.toggle("ball2");
+          setTimeout(function() {
            var num = Math.floor(Math.random() * Math.floor(answers.length));
            answer.innerText = answers[num];
-           var element = document.getElementById("ball");
-            element.classList.toggle("ball2");
-            setTimeout(30000)
+          }, delay);
          });
     }
     
