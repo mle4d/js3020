@@ -77,15 +77,21 @@
 
     window.onload = function() {
        var answer = document.getElementById("answer");
-       var delay = 7000;
+       var delayAnswer = 7000;
+       var delay8 = 5000;
+
       //  var button = document.getElementById("button");
        recognition.addEventListener('end', function() {
-         var element = document.getElementById("ball");
-          element.classList.toggle("ball2");
+         var ball = document.getElementById("ball");
+          ball.classList.toggle("ball2");
+          setTimeout(function() {
+        var eight = document.getElementById("eight");
+          eight.classList.toggle("gone");
+        }, delay8);
           setTimeout(function() {
            var num = Math.floor(Math.random() * Math.floor(answers.length));
            answer.innerText = answers[num];
-          }, delay);
+          }, delayAnswer);
          });
     }
     
