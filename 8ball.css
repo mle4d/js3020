@@ -42,35 +42,38 @@ transform:rotate(36deg);
   }
 }
 @keyframes spin-answer {
+  0% {
+    transform:rotate(15deg);
+  }
   10% {
-transform:rotate(-35deg);
+    transform:rotate(-65deg);
   }
   20% {
-    transform:rotate(-71deg);
+    transform:rotate(25deg);
     }
   30% {
-    transform:rotate(-107deg);
+    transform:rotate(-55deg);
     }
   40% {
-    transform:rotate(-143deg);
+    transform:rotate(35deg);
     }
   50% {
-    transform:rotate(-179deg);
+    transform:rotate(-45deg);
     }
   60% {
-    transform:rotate(-215deg);
+    transform:rotate(45deg);
     }
   70% {
-    transform:rotate(-251deg);
+    transform:rotate(-35deg);
     }
   80% {
-    transform:rotate(-287deg);
+    transform:rotate(55deg);
     }
   90% {
-    transform:rotate(-323deg);
+    transform:rotate(-25deg);
     }
   100% {
-    transform:rotate(-359deg);
+    transform:rotate(65deg);
     }
 }
 .stage {
