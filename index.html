@@ -41,12 +41,8 @@
         }
     });
     
-    recognition.addEventListener('end', recognition.start);
     recognition.start();
 
-    recognition.addEventListener('end', recognition.stop);
-    
-      
     var answers = ["Heck no", 
                    "Hell. Yes.", 
                    "You already know", 
@@ -81,14 +77,14 @@
 
     window.onload = function() {
        var answer = document.getElementById("answer");
-       var button = document.getElementById("button");
-       
-       button.addEventListener("click", function() {
-         console.log("click");
+      //  var button = document.getElementById("button");
+       recognition.addEventListener('end', function() {
            var num = Math.floor(Math.random() * Math.floor(answers.length));
            answer.innerText = answers[num];
          });
     }
+    recognition.addEventListener('end', recognition.stop);
+    
   </script>
 
 </body>
