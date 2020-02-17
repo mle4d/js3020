@@ -150,13 +150,13 @@ transform:rotate(-35deg);
 }
 .gone {
   position: absolute;
-  background: radial-gradient(circle at 60% 50%, #06003a, #41184b 65%, #210236 100%);
+  background: linear-gradient(45deg, rgb(5, 0, 20) 0%, rgb(9, 1, 85) 100%);
   width: 160px;
   height: 160px;
   margin: 30%;
   border-radius: 100%;
-  border: inset 9px #c46adb;
-  box-shadow: inset 10px 20px 10px rgba(200,0,20,0.05), inset 10px 20px 10px rgba(20,0,200,0.1);
+  border: solid 9px #c46adb;
+  /* box-shadow: inset 10px 10px 10px rgba(105, 1, 121, 0.308), inset 10px 10px 10px rgba(22, 48, 117, 0.591); */
   -webkit-transform: translateX(78px) translateY(-60px) skewX(15deg) skewY(2deg);
   -moz-transform: translateX(78px) translateY(-60px) skewX(15deg) skewY(2deg);
   -ms-transform: translateX(78px) translateY(-60px) skewX(15deg) skewY(2deg);
@@ -177,7 +177,7 @@ transform:rotate(-35deg);
   top: 35px;
   margin-top: 10px;
   color: #ffffff;
-  animation: spin-answer 45s linear infinite;
+  animation: spin-answer 55s linear infinite;
 } 
 
 
