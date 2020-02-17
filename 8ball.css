@@ -58,7 +58,7 @@ transform:rotate(36deg);
   }
   50% {
     opacity: 1;
-    transform: rotate(0deg) scaleX(2) scaleY(2);
+    transform: rotate(0deg) scaleX(1.5) scaleY(1.5);
   }
   55%, 90% {
     opaciy: .0;
