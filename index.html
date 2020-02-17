@@ -9,7 +9,7 @@
     <section class="stage">
         <figure class="ball" id="ball">
           <span class="shadow"></span>
-          <span class="eight" id="eight"></span>
+          <span class="eight" id="eight"><span class="answer" id="answer"></span></span>
           <span class="answer" id="answer"></span>
         </figure>
       </section>
@@ -77,23 +77,24 @@
 
     window.onload = function() {
        var answer = document.getElementById("answer");
-       var delayAnswer = 7000;
+       answer.classList.toggle("red");
+       var delayAnswer = 6000;
        var delay8 = 4000;
 
-      //  var button = document.getElementById("button");
        recognition.addEventListener('end', function() {
          var ball = document.getElementById("ball");
-          ball.classList.toggle("ball2");
+         ball.classList.toggle("ball2");
+         setTimeout(function() {
+           var eight = document.getElementById("eight");
+           eight.classList.toggle("gone");
+          }, delay8);
           setTimeout(function() {
-        var eight = document.getElementById("eight");
-          eight.classList.toggle("gone");
-        }, delay8);
-          setTimeout(function() {
-           var num = Math.floor(Math.random() * Math.floor(answers.length));
-           answer.innerText = answers[num];
+            var num = Math.floor(Math.random() * Math.floor(answers.length));
+            answer.innerText = answers[num];
           }, delayAnswer);
-         });
-    }
+        });
+      }
+      //  var button = document.getElementById("button");
     
     document.body.onclick = function() {
       recognition.start();
