@@ -85,6 +85,9 @@
     }
     recognition.addEventListener('end', recognition.stop);
     
+    document.body.onclick = function() {
+      recognition.start();
+    }
   </script>
 
 </body>
