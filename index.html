@@ -7,19 +7,19 @@
 </head>
 <body>
     <section class="stage">
-        <figure class="ball">
+        <figure class="ball" id="ball">
           <span class="shadow"></span>
           <span class="eight"></span>
         </figure>
       </section>
       <span id="answer"></span>
     <div class="words" contenteditable></div>
-      <button id="button">click me</button>
+      <button id="button">Ask Again</button>
   <script>
     window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   
     const recognition = new SpeechRecognition();
-    recognition.interimResults = false;
+    recognition.interimResults = true;
     recognition.lang = 'en-US';
     
     let p = document.createElement('p');
@@ -81,9 +81,11 @@
        recognition.addEventListener('end', function() {
            var num = Math.floor(Math.random() * Math.floor(answers.length));
            answer.innerText = answers[num];
+           var element = document.getElementById("ball");
+            element.classList.toggle("ball2");
+            setTimeout(30000)
          });
     }
-    recognition.addEventListener('end', recognition.stop);
     
     document.body.onclick = function() {
       recognition.start();
