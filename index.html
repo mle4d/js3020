@@ -79,6 +79,16 @@
                    "Mmmkay"
                   ];
 
+    window.onload = function() {
+       var answer = document.getElementById("answer");
+       var button = document.getElementById("button");
+       
+       button.addEventListener("click", function() {
+         console.log("click");
+           var num = Math.floor(Math.random() * Math.floor(answers.length));
+           answer.innerText = answers[num];
+         });
+    }
   </script>
 
 </body>
