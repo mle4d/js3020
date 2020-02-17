@@ -12,8 +12,9 @@
           <span class="eight"></span>
         </figure>
       </section>
+      <span id="answer"></span>
     <div class="words" contenteditable></div>
-  
+      <button id="button">click me</button>
   <script>
     window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   
@@ -44,10 +45,7 @@
     recognition.start();
 
     recognition.addEventListener('end', recognition.stop);
-    recognition.start();
     
-    
-  
   </script>
 
 </body>
