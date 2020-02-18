@@ -100,6 +100,10 @@ transform:rotate(36deg);
     transform:rotate(15deg);
     }
 }
+@keyframes spin-window {
+  from {background-position:0 0;}
+  to {background-position:400px 400px;}
+}
 .stage {
   width: 400px;
   height: 400px;
@@ -179,7 +183,8 @@ transform:rotate(36deg);
   position: absolute;
   background: rgb(9, 1, 85);
   background-image: url(assets/blurb.png);
-  background-size: 120%;
+  background-size: 150%;
+  background-repeat: repeat;
   width: 160px;
   height: 160px;
   margin: 30%;
@@ -191,6 +196,7 @@ transform:rotate(36deg);
   -ms-transform: translateX(78px) translateY(-60px) skewX(15deg) skewY(2deg);
   -o-transform: translateX(78px) translateY(-60px) skewX(15deg) skewY(2deg);
   transform: translateX(78px) translateY(-60px) skewX(2deg) skewY(10deg);
+  animation: spin-window 90s ease-in-out infinite;
 }
 .gone:before {
   content: "";
