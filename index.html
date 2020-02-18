@@ -17,6 +17,7 @@
       <div class="burst1" id="burst1"></div>
     <div class="words" contenteditable></div>
       <button id="button">Ask Again</button>
+        <div id="star"></div>
   <script>
     window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   
@@ -79,7 +80,7 @@
 
     window.onload = function() {
        var answer = document.getElementById("answer");
-       var delayAnswer = 7000;
+       var delayAnswer = 5000;
        var delay8 = 3000;
 
        recognition.addEventListener('end', function() {
