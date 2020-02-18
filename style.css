@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Pacifico&display=swap');
 html {
   background: rgb(2,0,0);
   background-image: url(assets/bg.png);
@@ -10,13 +11,34 @@ html {
 body {
   overscroll-behavior: none;
 }
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 4em;
+  background: -webkit-radial-gradient( #c797d1, #622987, #291d5b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 15px;
+  opacity: .8;
+  position: fixed;
+  top: -7%;
+  left: 35%;
+}
+h3 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 2em;
+  position: fixed;
+  top: 12%;
+  left: 36%;
+  background: -webkit-radial-gradient( #c797d1, #7632a4, #c797d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .words {
   position: fixed;
   right: 10%;
-  top: 5%;
-  width: 300px;
-  height: auto;
-  background: transparent;
+  top: 28%;
+  width: 400px;
+  max-height: 250px;
   box-shadow: 3px 3px 3px 2px #1c113cba;
   border-radius: 2rem;
   opacity: .8;
@@ -25,6 +47,7 @@ body {
   font-size: 2em;
   color: #ffffff;
   outline:none;
+  overflow: scroll;
 }
 button {
   position: fixed;
