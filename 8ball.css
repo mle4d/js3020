@@ -67,37 +67,37 @@ transform:rotate(36deg);
 }
 @keyframes spin-answer {
   0% {
-    transform:rotate(35deg);
+    transform:rotate(-250deg);
   }
   10% {
-    transform:rotate(95deg);
+    transform:rotate(5deg);
   }
   20% {
     transform:rotate(75deg);
     }
   30% {
-    transform:rotate(45deg);
+    transform:rotate(-135deg);
     }
   40% {
-    transform:rotate(-35deg);
+    transform:rotate(125deg);
     }
   50% {
     transform:rotate(-65deg);
     }
   60% {
-    transform:rotate(25deg);
+    transform:rotate(5deg);
     }
   70% {
-    transform:rotate(55deg);
+    transform:rotate(-125deg);
     }
   80% {
-    transform:rotate(-25deg);
+    transform:rotate(165deg);
     }
   90% {
-    transform:rotate(-55deg);
+    transform:rotate(-145deg);
     }
   100% {
-    transform:rotate(15deg);
+    transform:rotate(25deg);
     }
 }
 @keyframes spin-window {
@@ -212,7 +212,7 @@ transform:rotate(36deg);
   top: 55px;
   margin-top: 10px;
   color: #ffffff;
-  animation: spin-answer 55s ease-in-out infinite;
+  animation: spin-answer 75s ease-in-out infinite;
 } 
 .burst {
   background-image: url(assets/burst.png);
