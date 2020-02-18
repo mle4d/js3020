@@ -67,37 +67,37 @@ transform:rotate(36deg);
 }
 @keyframes spin-answer {
   0% {
-    transform:rotate(15deg);
+    transform:rotate(35deg);
   }
   10% {
-    transform:rotate(-65deg);
+    transform:rotate(95deg);
   }
   20% {
-    transform:rotate(25deg);
+    transform:rotate(75deg);
     }
   30% {
-    transform:rotate(-55deg);
-    }
-  40% {
-    transform:rotate(35deg);
-    }
-  50% {
-    transform:rotate(-45deg);
-    }
-  60% {
     transform:rotate(45deg);
     }
-  70% {
+  40% {
     transform:rotate(-35deg);
     }
-  80% {
+  50% {
+    transform:rotate(-65deg);
+    }
+  60% {
+    transform:rotate(25deg);
+    }
+  70% {
     transform:rotate(55deg);
     }
-  90% {
+  80% {
     transform:rotate(-25deg);
     }
+  90% {
+    transform:rotate(-55deg);
+    }
   100% {
-    transform:rotate(65deg);
+    transform:rotate(15deg);
     }
 }
 .stage {
@@ -206,7 +206,7 @@ transform:rotate(36deg);
   top: 55px;
   margin-top: 10px;
   color: #ffffff;
-  animation: spin-answer 55s linear infinite;
+  animation: spin-answer 55s ease-in-out infinite;
 } 
 .burst {
   background-image: url(assets/burst.png);
