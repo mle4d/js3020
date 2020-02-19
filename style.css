@@ -175,4 +175,8 @@ button:active {
   top: 0%;
   z-index: -1;
   animation: twinkle 30s linear infinite;
+  -webkit-animation: twinkle 30s linear infinite;
+  -moz-animation: twinkle 30s linear infinite;
+  -ms-animation: twinkle 30s linear infinite;
+  -o-animation: twinkle 30s linear infinite;
 }
