@@ -261,6 +261,24 @@ transform:rotate(36deg);
     transform: rotate(0deg) scaleX(0) scaleY(0);
   }
 }
+@-moz-keyframes move-burst {
+  0%, 100% {
+    opacity: .0;
+    transform: rotate(360deg) scaleX(0) scaleY(0);
+  }
+  47% {
+    opacity: 1;
+    transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(0deg) scaleX(1.5) scaleY(1.5);
+  }
+  55%, 90% {
+    opaciy: .0;
+    transform: rotate(0deg) scaleX(0) scaleY(0);
+  }
+}
 @keyframes move-burst {
   0%, 100% {
     opacity: .0;
