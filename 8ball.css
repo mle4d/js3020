@@ -628,7 +628,12 @@ transform:rotate(36deg);
   -ms-transform: translateX(78px) translateY(-60px) skewX(15deg) skewY(2deg);
   -o-transform: translateX(78px) translateY(-60px) skewX(15deg) skewY(2deg);
   transform: translateX(78px) translateY(-60px) skewX(2deg) skewY(10deg);
+  -webkit-animation: spin-window 90s ease-in-out infinite;
+  -moz-animation: spin-window 90s ease-in-out infinite;
+  -o-animation: spin-window 90s ease-in-out infinite;
+  -ms-animation: spin-window 90s ease-in-out infinite;
   animation: spin-window 90s ease-in-out infinite;
+
 }
 .gone:before {
   content: "";
