@@ -651,6 +651,10 @@ transform:rotate(36deg);
   top: 55px;
   margin-top: 10px;
   color: #ffffff;
+  -webkit-animation: spin-answer 75s ease-in-out infinite;
+  -moz-animation: spin-answer 75s ease-in-out infinite;
+  -o-animation: spin-answer 75s ease-in-out infinite;
+  -ms-animation: spin-answer 75s ease-in-out infinite;
   animation: spin-answer 75s ease-in-out infinite;
 } 
 .burst {
