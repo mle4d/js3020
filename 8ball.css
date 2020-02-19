@@ -438,6 +438,41 @@ transform:rotate(36deg);
     transform:rotate(25deg);
     }
 }
+@-ms-keyframes spin-answer {
+  0% {
+    transform:rotate(-250deg);
+  }
+  10% {
+    transform:rotate(5deg);
+  }
+  20% {
+    transform:rotate(75deg);
+    }
+  30% {
+    transform:rotate(-135deg);
+    }
+  40% {
+    transform:rotate(125deg);
+    }
+  50% {
+    transform:rotate(-65deg);
+    }
+  60% {
+    transform:rotate(5deg);
+    }
+  70% {
+    transform:rotate(-125deg);
+    }
+  80% {
+    transform:rotate(165deg);
+    }
+  90% {
+    transform:rotate(-145deg);
+    }
+  100% {
+    transform:rotate(25deg);
+    }
+}
 @keyframes spin-answer {
   0% {
     transform:rotate(-250deg);
