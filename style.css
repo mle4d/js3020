@@ -13,7 +13,7 @@ body {
 }
 h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 4em;
+  font-size: 5vw;
   background: -webkit-radial-gradient( #c797d1, #622987, #291d5b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,7 +25,7 @@ h1 {
 }
 h3 {
   font-family: 'Lobster Two', cursive;
-  font-size: 2em;
+  font-size: 2.5vw;
   position: fixed;
   top: 12%;
   left: 36%;
@@ -44,7 +44,7 @@ h3 {
   opacity: .8;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 140%;
   color: #ffffff;
   outline:none;
   overflow: scroll;
@@ -63,7 +63,7 @@ button {
   opacity: .8;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 160%;
   color: #ffffff;
 }
 button:hover {
