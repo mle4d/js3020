@@ -508,6 +508,10 @@ transform:rotate(36deg);
     transform:rotate(25deg);
     }
 }
+@-webkit-keyframes spin-window {
+  from {background-position:0 0;}
+  to {background-position:400px 400px;}
+}
 @keyframes spin-window {
   from {background-position:0 0;}
   to {background-position:400px 400px;}
