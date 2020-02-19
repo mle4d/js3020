@@ -548,6 +548,10 @@ transform:rotate(36deg);
   bottom: 10%;
   -webkit-filter: blur(.5px);
   animation: spin-all 50s linear infinite;
+  -webkit-animation: spin-all 50s linear infinite;
+  -moz-animation: spin-all 50s linear infinite;
+  -o-animation: spin-all 50s linear infinite;
+  -ms-animation: spin-all 50s linear infinite;
   background-image: url(assets/twinkle.png);
 }
 
