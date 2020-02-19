@@ -158,6 +158,23 @@ transform:rotate(36deg);
     transform:rotate(360deg);
     }
 }
+@-webkit-keyframes move-ball {
+  0% {
+    transform: none;
+  }
+  20%, 40% {
+    transform: rotate(360deg) translateX(10px) translateY(10px) skewX(1deg) skewY(1deg) scaleX(0) scaleY(0);
+  }
+  50% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 1;
+  }
+  80%, 100% {
+    transform: rotate(-360deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg) scaleX(1) scaleY(1);
+  }
+}
 @keyframes move-ball {
   0% {
     transform: none;
