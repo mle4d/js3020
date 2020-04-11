@@ -21,7 +21,7 @@ h1 {
   opacity: .8;
   position: fixed;
   top: -4vh;
-  left: 40vw;
+  left: 39vw;
   text-align: center;
 }
 h3 {
@@ -30,7 +30,7 @@ h3 {
   text-align: center;
   position: fixed;
   top: 16vh;
-  left: 42vw;
+  left: 40vw;
   background: -webkit-radial-gradient( #c797d1, #7632a4, #c797d1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
