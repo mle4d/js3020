@@ -668,8 +668,8 @@ transform:rotate(36deg);
   -ms-animation: move-burst 10s ease-in-out infinite;
   animation: move-burst 10s ease-in-out infinite;
   position: fixed;
-  top: 33%;
-  left: 16%;
+  bottom: 26vmin;
+  left: 15vmax;
   z-index: -1;
 }
 
