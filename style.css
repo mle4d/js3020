@@ -25,10 +25,10 @@ h1 {
 }
 h3 {
   font-family: 'Lobster Two', cursive;
-  font-size: 2.5vw;
+  font-size: 2vmax;
   position: fixed;
-  top: 12%;
-  left: 36%;
+  top: 14vh;
+  left: 40vw;
   background: -webkit-radial-gradient( #c797d1, #7632a4, #c797d1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -51,7 +51,7 @@ h3 {
 }
 button {
   position: fixed;
-  bottom: 10%;
+  bottom: 10vmax;
   right: 15%;
   width: 20%;
   height: 4rem;
